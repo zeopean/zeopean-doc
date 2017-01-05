@@ -165,3 +165,35 @@ def add(x, y):
 
 
 ```
+
+# 参数检查
+
+```
+
+from celery import Celery
+app = Celery()
+
+@app.task(typing=False)
+def add(x, y):
+	return x + y
+	
+#	运行结果
+>>> add.delay(1, 2)
+<AsyncResult: 6be9ae98-5034-4973-875e-5030d2331e3b>
+>>> add.delay(1)
+<AsyncResult: 3321d3a0-3e36-42ea-a34f-dbe23424051a>
+>>> add.delay()
+<AsyncResult: 36543fba-80f8-4181-b9d4-18e77255c079>
+	
+
+```
+
+# autoretry_for
+
+```
+@app.task(autoretry_for=(Exception,))
+def x():
+    ...
+
+```
+
