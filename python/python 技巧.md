@@ -1,3 +1,27 @@
+
+
+
+
+
+#### % 的使用
+
+```
+#统计时长
+a = np.arange(1000)
+%timeit a**2
+
+
+```
+
+#### ? 的使用
+
+```
+np.array?
+
+```
+
+
+
 #### 设置俩个时间的时间差
 
 ```
@@ -185,4 +209,6 @@ webbrowser.open("http://www.zeopean.com")       #打开页面
 webbrowser.open_new("http://www.baidu.com")
 webbrowser.open_new_tab("http://php.net")
 ```
+
+
 

@@ -1,3 +1,11 @@
+#### 查看系统服务状态
+
+```
+service --status-all
+
+```
+
+
 #### redis 后台运行
 
 ```
@@ -84,6 +92,9 @@ lsof（list open files）
     -v 显示版本信息
 
 ```
+
+
+
 
 
 
