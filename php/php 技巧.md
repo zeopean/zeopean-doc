@@ -1,3 +1,32 @@
+
+#### 获取php 最后一个错误异常
+
+```
+echo error_get_last();
+
+```
+
+
+
+#### phpsh 对使用
+
+```
+1.安装 readline
+
+	sudo easy_install readline
+
+2.到 https://github.com/facebookarchive/phpsh 下载包
+
+3.执行以下命令
+	
+	python	setup.py build
+	python setup.py install
+	phpsh //进入php命令行
+
+
+```
+
+
 #### extension_loaded 
 
     检查一个扩展是否已经加载
@@ -365,3 +394,6 @@ array_multisort() 可以用来一次对多个数组进行排序，或者根据�
     }
     
 ```
+
+
+
