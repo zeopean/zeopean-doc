@@ -1,3 +1,25 @@
+#### composer 镜像设置
+
+
+
+1.设置
+	composer config -g -e
+
+2. 进行配置
+```
+{
+    "repositories": [
+        { "packagist": false },
+        {
+            "type": "composer",
+            "url": "https://composer-proxy.jp/proxy/packagist"
+        }
+    ]
+}
+
+```
+
+
 
 #### 获取php 最后一个错误异常
 

@@ -19,3 +19,10 @@ INSERT into insert_table_name(field_1,field_2,...) select field_1,field_2,... fr
 desc table_name;
 
 ```
+
+####  查看表信息
+
+```
+show table status where name='xl_dan_test_order';
+
+```

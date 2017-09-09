@@ -46,3 +46,23 @@ public static LazySingleton getInstance() {
     }
 
 ```
+
+#### java判断是否数组中有某个元素
+
+
+1.Arrays.asList(...).contains(...)
+
+
+2.使用 Apache Commons Lang包中的ArrayUtils.contains
+
+```
+
+
+String[] fieldsToInclude = { "id", "name", "location" };
+
+if ( ArrayUtils.contains( fieldsToInclude, "id" ) ) {
+    // Do some stuff.
+}
+
+
+```

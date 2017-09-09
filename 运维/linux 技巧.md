@@ -1,4 +1,15 @@
 
+
+#### 文件传输
+
+```
+
+scp ~/Desktop/excel.zip   common@121.41.30.169:/home/www/box4_home/ceping-wz/wx/pub/New/data
+
+```
+
+
+
 #### rz,sz的使用
 
 - 软件安装
