@@ -15,6 +15,7 @@ resource proc_open ( string $cmd ,
 ```
 
 1.实例
+
 ```
 <?php
     $descriptorspec = array(

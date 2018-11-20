@@ -35,7 +35,7 @@
     
         amqp
 
-        Version	        1.7.0
+        Version	    1.7.0
         Revision	    release
         Compiled	    May 2 2016 @ 01:44:24
         AMQP protocol  version	0-9-1

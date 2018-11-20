@@ -53,6 +53,7 @@ echo error_get_last();
 
     检查一个扩展是否已经加载
 
+
 #### strncmp
 
     二进制安全比较字符串开头的若干个字符
@@ -80,7 +81,7 @@ $a = array_fill_keys($keys, 'banana');
 print_r($a);
 
 
-#以上例程会输出：
+- 以上例程会输出：
 
 Array
 (
@@ -96,6 +97,7 @@ Array
     
     * 调用由第一参数给出的回调函数，并将其余的参数作为回调函数的参数。
     * call_user_func_array 表示参数为数组
+    
 ```
 class TestFunCallUserFunc
 {
@@ -108,7 +110,8 @@ class TestFunCallUserFunc
 
 
 call_user_func(['TestFunCallUserFunc', 'index'],'zeopean');
-#retult: zeopean
+
+- retult: zeopean
 
 function _testCallUserFunc($arg)
 {
@@ -125,7 +128,8 @@ echo '<hr>';
 
 call_user_func_array('_testCallUserFunc', ['daming']);
 
-#result: daming
+- result: daming
+
 ```
     
 #### 2. call_user_func_array 
@@ -144,7 +148,9 @@ call_user_func_array('_testCallUserFunc', ['daming']);
 
 
 #### 3.创建一个空对象的三种方式
+
 ```php
+
 <?php
     $obj1 = new \stdClass; // Instantiate stdClass object
     $obj2 = new class{}; // Instantiate anonymous class
@@ -158,6 +164,7 @@ call_user_func_array('_testCallUserFunc', ['daming']);
 ```
 
 #### 4.array_flip 数组键值对换
+
 ```
 array array_flip ( array $trans )
 array_flip() 返回一个反转后的 array，例如 trans 中的键名变成了值，而 trans 中的值成了键名。
@@ -166,6 +173,7 @@ array_flip() 返回一个反转后的 array，例如 trans 中的键名变成了
 
 如果同一个值出现了多次，则最后一个键名将作为它的值，所有其它的都丢失了。
 ```
+
 ```php
 <?php
     $trans = array("a" => 1, "b" => 1, "c" => 2);
@@ -177,6 +185,7 @@ array_flip() 返回一个反转后的 array，例如 trans 中的键名变成了
 
 
 #### 5.array_intersect_key 使用键名比较计算数组的交集
+
 ```
 array array_intersect_key ( array $array1 , array $array2 [, array $ ... ] )
 array_intersect_key() 返回一个数组，该数组包含了所有出现在 array1 中并同时出现在所有其它参数数组中的键名的值。
